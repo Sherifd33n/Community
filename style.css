@@ -1,0 +1,156 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --yellow: hsl(71, 73%, 54%);
+  --gray: hsl(204, 43%, 93%);
+  --blue: hsl(218, 22%, 67%);
+  --active: hsl(179, 43%, 51%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  padding: 0 27%;
+}
+
+.top {
+  padding: 2rem;
+  background: #fff;
+}
+
+.top .big-text {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--cyan);
+}
+
+.top .middle-text {
+  margin: 1rem 0;
+  font-weight: 550;
+  font-size: 1.1rem;
+  color: var(--yellow);
+}
+
+.top .small-text {
+  color: var(--blue);
+}
+
+.bottom {
+  display: flex;
+  color: var(--gray);
+  justify-content: space-between;
+}
+
+.bottom .left {
+  padding: 2rem;
+  width: 50%;
+  background: var(--cyan);
+}
+
+.left .big-text {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.left .number {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.left .small-text {
+  opacity: 90%;
+}
+
+.left a {
+  font-weight: 600;
+  color: var(--gray);
+  border-radius: 2px;
+  text-decoration: none;
+  padding: 0.55rem 5.4rem 0.66rem 5.4rem;
+  background: var(--yellow);
+  border: 2px solid var(--yellow);
+}
+
+.left a:hover {
+  transition: 0.2s;
+  background: transparent;
+}
+
+.flex {
+  display: flex;
+  margin: 0.5rem 0;
+  align-items: center;
+}
+
+.left span {
+  opacity: 60%;
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.left .btn {
+  margin: 3rem 0 1rem 0;
+}
+
+.bottom .right {
+  width: 50%;
+  padding: 2rem;
+  background: var(--active);
+}
+
+.bottom .right .big-text {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.bottom .right .small-text {
+  opacity: 80%;
+  padding-right: 20%;
+  color: var(--gray);
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 15% 8%;
+  }
+
+  .top {
+    padding: 2rem;
+    background: #fff;
+  }
+
+  .top .big-text {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--cyan);
+  }
+  .bottom {
+    display: grid;
+  }
+
+  .bottom .left {
+    padding: 2rem;
+    width: 100%;
+  }
+  .bottom .right {
+    width: 100%;
+  }
+  .bottom .right .small-text {
+    opacity: 80%;
+    padding-right: 5%;
+    color: var(--gray);
+  }
+}
